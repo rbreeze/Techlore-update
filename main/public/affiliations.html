@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="The Techlore Website: Lemurs Unite">
+  <meta name="description" content="Technology video tutorials, setups, reviews, and guides. I go through many things in our modern-day technological era and how they impact us such as VPNs, Proxies, Tor Browser, cryptocurrencies, our security and privacy, and how they interact with our operating systems and our daily lives. In our current digital age, privacy invasion and the lack of proper security is an enormous issue which we must do everything we can to combat! One of my goals as a content creator is to spread the idea of internet freedom, privacy, and security. These are all basic human rights and there is no reason why no one should be restricted the option of controlling their own data. My channel goal is to build a large community where we all share this common goal with our love for technology and use it to better our technological world we live in today."/>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <title> Techlore | Affiliations  </title>
+  <base target="_blank">
+
+</head>
+
+
+
+
+
+<body class="page">    
+  <div class="nav">
+  <ul>
+    <li class="logo-container">
+      <a href="./index.html" target="_self"><img class="logo" src="assets/images/logo.png"></a>
+    </li>
+    <li>
+      <a class="nav-item " target="_self" href="./index.html">
+        Home
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <a class="nav-item " target="_self" href="./about.html">
+        About
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    <li>
+      <a class="nav-item " target="_self" href="./goincognito.html">
+        Course
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    <li>
+      <a class="nav-item " target="_self" href="./videos.html">
+        Videos
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    <li>
+      <a class="nav-item " target="_self" href="./vpn.html">
+        VPN
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    <li>
+      <a class="nav-item " target="_self" href="./contact.html">
+        Contact
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    <li>
+      <a class="nav-item " target="_self" href="./support.html">
+        Support
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    
+    <li>
+      <a class="nav-item active" target="_self" href="./affiliations.html">
+        Affiliations
+      </a>
+    </li>
+    <li class="spacer"> | </li> 
+    
+    
+    <div class="social-supercontainer">
+      <li class="social-container">
+        <a href="https://www.patreon.com/techlore" target="_blank"><img class="social" src="assets/images/patreon.png"></a>
+      </li>
+      <li class="social-container">
+        <a href="https://twitter.com/techloreistaken" target="_blank"><img class="social" src="assets/images/twitter.png"></a>
+      </li>
+      <li class="social-container">
+        <a href="https://discordapp.com/invite/sdMv9Zj" target="_blank"><img class="social" src="assets/images/discord.png"></a>
+      </li>
+      <li class="social-container">
+        <a href="https://www.reddit.com/r/techlore/" target="_blank"><img class="social" src="assets/images/reddit.png"></a>
+      </li>
+      <li class="social-container">
+        <a href="https://t.me/techloreofficial" target="_blank"><img class="social" src="assets/images/telegram-a.png"></a>
+      </li>
+      <li class="social-container">
+        <a href="https://t.me/techloregroup" target="_blank"><img class="social" src="assets/images/telegram-g.png"></a>
+      </li>
+      <li class="social-container">
+        <a href="https://matrix.to/#/!GibBpYxFGNraRsZOyl:matrix.org?via=matrix.org&via=t2bot.io" target="_blank"><img class="social" src="assets/images/matrix.png"></a>
+      </li>
+    </div>
+    <li class="show-menu">
+      <a>Menu</a>
+    </li>
+    <li class="hide-menu">
+      <a>Hide Menu</a>
+    </li>
+  </ul>
+</div>
+
+<script src="assets/javascript/jquery-latest.min.js"
+        type="text/javascript"></script>
+<script> 
+$(document).ready(function() {
+
+  var menuHidden = true; 
+  $('.hide-menu').hide(); 
+
+  var menuCheck = function() {
+    if ($(window).width() > 1180) {
+      menuHidden = true; 
+      $('.nav ul li').show(); 
+      $('.social-supercontainer').css('display', 'inline-block');
+      $('.show-menu').hide();
+      $('.hide-menu').hide(); 
+      $('.nav').css({ 'height' : '70px' });
+    } else {
+
+      $('.nav').css({ 'height' : 'auto' });
+
+      if (menuHidden == true) {
+        $('.nav ul li').hide();
+        $('.nav ul li.logo-container').show();
+        $('.social-supercontainer').css('display', 'none');
+        $('.show-menu').show();
+        $('.hide-menu').hide(); 
+      } else if (menuHidden == false) {
+        $('.nav ul li').show();
+        $('.social-supercontainer').css('display', 'inline-block')
+        $('.hide-menu').show();
+        $('.show-menu').hide(); 
+      }
+    }
+  }
+
+  menuCheck();
+
+  $('.show-menu').click(function() {
+    $('.nav ul li').show();
+    $('.social-supercontainer').css('display', 'inline-block')
+    $('.hide-menu').show();
+    $(this).hide(); 
+    menuHidden = false; 
+  });
+
+  $('.hide-menu').click(function() {
+    $('.nav ul li').hide();
+    $('.nav ul li.logo-container').show();
+    $('.social-supercontainer').css('display', 'none');
+    $('.show-menu').show();
+    $(this).hide(); 
+    menuHidden = true; 
+  })
+
+  $(window).resize(function() {
+    menuCheck();
+  });
+
+});
+</script>
+  <div class="wrapper">
+    <h1 id="aff-header"> Affiliations </h1>
+    <div class="head-content">
+      
+<p>One of the ways the channel remains self-sufficient is through affiliations. I like to make my partnerships open to the community, so everything done on my end is fully transparent. I form an affiliation with VPN companies who score at least 4 stars in
+my standard VPN review, and I only open up partnership discussions after uploading the
+review on my channel. All other partnerships listed were chosen because of their relevance to
+the channel’s goals. I will never recommend a service I wouldn’t use myself, and I will
+continually re-examine my partnerships to ensure everything is still safe to recommend to my audience. All VPN reviews are conducted using a systematic review process to avoid any bias or sponsorship accusations. View the review process <a href="https://techlore.tech/vpn.html">here</a> to score these services yourself using the Techlore review protocol.</p>
+
+    </div>
+    <div class="main-content affiliations-content">
+      
+<h3 id="nordvpn">NordVPN</h3>
+<h4 id="vpn--scored-475">VPN | Scored 4.7/5</h4>
+<ul>
+  <li><a href="https://nordvpn.com/techlore">Affiliate Link</a></li>
+  <li><a href="https://nordvpn.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="airvpn">AirVPN</h3>
+<h4 id="vpn--scored-465">VPN | Scored 4.6/5</h4>
+<ul>
+  <li><a href="https://airvpn.org/?referred_by=420027">Affiliate Link</a></li>
+  <li><a href="https://airvpn.org/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="protonvpn">ProtonVPN</h3>
+<h4 id="vpn--scored-465-1">VPN | Scored 4.6/5</h4>
+<ul>
+  <li><a href="http://proton.go2cloud.org/SH1a">Affiliate Link</a></li>
+  <li><a href="https://protonvpn.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="pia">PIA</h3>
+<h4 id="vpn--scored-455">VPN | Scored 4.5/5</h4>
+<ul>
+  <li><a href="https://www.privateinternetaccess.com/pages/buy-vpn/techlore">Affiliate Link</a></li>
+  <li><a href="https://www.privateinternetaccess.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="cyberghost">Cyberghost</h3>
+<h4 id="vpn--scored-445">VPN | Scored 4.4/5</h4>
+<ul>
+  <li><a href="https://ho-app.cyberghostvpn.com/aff_c?offer_id=137&amp;aff_id=1602">Affiliate Link</a></li>
+  <li><a href="https://www.cyberghostvpn.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="expressvpn">ExpressVPN</h3>
+<h4 id="vpn--scored-425">VPN | Scored 4.2/5</h4>
+<ul>
+  <li><a href="http://www.linkev.com/?a_fid=techlore">Affiliate Link</a></li>
+  <li><a href="https://www.expressvpn.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="windscribe">Windscribe</h3>
+<h4 id="vpn--scored-405">VPN | Scored 4.0/5</h4>
+<ul>
+  <li><a href="https://windscribe.com/?affid=8nzworas">Affiliate Link</a></li>
+  <li><a href="https://windscribe.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="vyprvpn">VyprVPN</h3>
+<h4 id="vpn--scored-405-1">VPN | Scored 4.0/5</h4>
+<ul>
+  <li><a href="http://www.goldenfrog.com/vyprvpn/special/vpn-seasonal-special?offer_id=78&amp;aff_id=4269">Affiliate Link</a></li>
+  <li><a href="https://www.goldenfrog.com/vyprvpn">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="coinbase">Coinbase</h3>
+<h4 id="cryptocurrency-wallet--exchange">Cryptocurrency Wallet &amp; Exchange</h4>
+<ul>
+  <li><a href="https://www.coinbase.com/join/5942e0b5d26ede03db311893">Affiliate Link</a></li>
+  <li><a href="https://www.coinbase.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="binance">Binance</h3>
+<h4 id="cryptocurrency-exchange">Cryptocurrency Exchange</h4>
+<ul>
+  <li><a href="https://www.binance.com/?ref=13898297">Affiliate Link</a></li>
+  <li><a href="https://www.binance.com/">Non Affiliate Link</a></li>
+</ul>
+
+<h3 id="amazon">Amazon</h3>
+<h4 id="online-store">Online Store</h4>
+<ul>
+  <li><a href="https://www.amazon.com/shop/influencer20170928875">Affiliation Link</a></li>
+  <li><a href="https://www.amazon.com">Non-Affiliation</a></li>
+</ul>
+
+    </div>
+    <div class="push"></div>
+  </div>
+  <div class="footer">
+  Copyright &copy; Techlore <span id="year"></span>
+</div>
+
+<script> 
+  var curYear = (new Date()).getFullYear()
+  document.getElementById("year").innerHTML = curYear
+</script>
+
+</body>
+</html>

@@ -25,12 +25,14 @@ services:
       build:
         context: ./nginx
       restart: always
+      environment:
+      - HTTPS_METHOD=noredirect
       ports:
         - "80:80"
         - "443:443"
-      volumes:
-         - /etc/letsencrypt/:/etc/letsencrypt/
-         - /usr/share/nginx/html:/usr/share/nginx/html
+      # volumes:
+         # - /etc/letsencrypt/:/etc/letsencrypt/
+         # - /usr/local/share/nginx/html:/usr/share/nginx/html
 
   static: 
     image: rbreeze/techlore
